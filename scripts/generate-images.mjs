@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const colors = {
-  primary: "#7C3AED",
+  primary: "#2563EB",
   accent: "#F59E0B",
   light: "#FAFAFA",
   gray: "#E5E7EB",
@@ -26,13 +26,13 @@ function createLogo() {
   <defs>
     <linearGradient id="logo-mark-bg" x1="2" y1="2" x2="38" y2="42" gradientUnits="userSpaceOnUse">
       <stop stop-color="#8B5CF6"/>
-      <stop offset="1" stop-color="#6D28D9"/>
+      <stop offset="1" stop-color="#171717"/>
     </linearGradient>
   </defs>
   <rect x="0" y="2" width="40" height="40" rx="10" fill="url(#logo-mark-bg)"/>
   <rect x="6" y="30" width="28" height="3.5" rx="1.75" fill="${colors.accent}"/>
-  <text x="20" y="21" text-anchor="middle" dominant-baseline="middle" fill="${colors.white}" font-family="system-ui, sans-serif" font-size="14" font-weight="800" letter-spacing="-0.7">AAM</text>
-  <text x="50" y="19" fill="#6D28D9" font-family="system-ui, sans-serif" font-size="17" font-weight="800" letter-spacing="-0.4">AAM Partners</text>
+  <text x="20" y="21" text-anchor="middle" dominant-baseline="middle" fill="${colors.white}" font-family="system-ui, sans-serif" font-size="14" font-weight="800" letter-spacing="-0.7">TMS</text>
+  <text x="50" y="19" fill="#171717" font-family="system-ui, sans-serif" font-size="17" font-weight="800" letter-spacing="-0.4">THE MORE</text>
   <text x="50" y="34" fill="${colors.accent}" font-family="system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="2.2">LLC</text>
 </svg>`;
 }
@@ -59,7 +59,7 @@ heroItems.forEach((item) => {
 
 const bannerItems = [
   { name: "promo-1.svg", label: "Upgrade Your Living", sub: "Shop Deals", bg: colors.primary, textColor: colors.white },
-  { name: "about.svg", label: "Shopping Made Easy", sub: "AAM Partners LLC", bg: "#F3E8FF" },
+  { name: "about.svg", label: "Shopping Made Easy", sub: "THE MORE STORES", bg: "#F3E8FF" },
   { name: "featured.svg", label: "Featured Products", sub: "Marketplace Favorites", bg: colors.primary, textColor: colors.white },
 ];
 fs.mkdirSync(path.join(root, "banners"), { recursive: true });

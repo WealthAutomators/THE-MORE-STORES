@@ -1,19 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
-  --foreground: #1f2937;
-  --primary: #7c3aed;
+  --background: #f6f5f2;
+  --foreground: #171717;
+  --primary: #2563eb;
   --primary-foreground: #ffffff;
-  --accent: #f59e0b;
+  --accent: #f97316;
   --accent-foreground: #ffffff;
-  --pink: #ec4899;
-  --muted: #f3f4f6;
+  --highlight: #f4c542;
+  --highlight-foreground: #171717;
+  --near-black: #171717;
+  --muted: #f0efeb;
   --muted-foreground: #6b7280;
-  --border: #e5e7eb;
-  --ring: #7c3aed;
+  --border: #d9d9d5;
+  --ring: #2563eb;
   --card: #ffffff;
-  --radius: 12px;
+  --radius: 10px;
 }
 
 @theme inline {
@@ -23,14 +25,17 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  --color-pink: var(--pink);
+  --color-highlight: var(--highlight);
+  --color-highlight-foreground: var(--highlight-foreground);
+  --color-near-black: var(--near-black);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
   --color-ring: var(--ring);
   --color-card: var(--card);
   --font-sans: var(--font-inter);
-  --radius-lg: 12px;
+  --font-display: var(--font-archivo);
+  --radius-lg: 10px;
   --radius-xl: 12px;
 }
 
@@ -38,6 +43,13 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-archivo), var(--font-inter), system-ui, sans-serif;
 }
 
 @keyframes accordion-down {
@@ -68,4 +80,13 @@ html {
 
 body {
   overflow-x: hidden;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

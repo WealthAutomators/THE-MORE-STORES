@@ -26,16 +26,14 @@ export default function AboutPage() {
           </div>
           <PageSection title="Our Story">
             <p>
-              AAM Partners LLC was founded with a simple mission: make online shopping easier for
-              families by bringing together quality products across every category in one trusted
-              marketplace. From electronics and home essentials to toys, beauty, and pet supplies —
-              we curate products that deliver real value.
+              THE MORE STORES was built around a simple idea: more to discover, more to choose, and
+              more for everyday life. We bring together useful finds across electronics, home,
+              beauty, family, pets, and beyond — a modern department store energy in one marketplace.
             </p>
             <p className="mt-4">
-              Based in Virginia Beach, Virginia, we work with reliable suppliers to offer competitive
-              prices without compromising on quality. Every product in our catalog is selected with
-              care, and our team is dedicated to making your shopping experience smooth from browsing
-              to checkout.
+              Based in Las Vegas, Nevada, we curate products that feel polished, practical, and worth
+              bringing home. Every item is selected for quality and everyday value, with a shopping
+              experience designed to feel bold, clear, and easy from browse to checkout.
             </p>
           </PageSection>
         </div>

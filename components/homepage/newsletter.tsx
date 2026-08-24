@@ -21,15 +21,19 @@ export function Newsletter() {
   return (
     <section className="py-12 md:py-16">
       <Container>
-        <div className="relative overflow-hidden rounded-xl px-6 py-12 text-center md:px-16 md:py-16">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-purple-900" />
-          <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/5" />
-          <div className="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-accent/10" />
+        <div className="relative overflow-hidden rounded-xl bg-primary px-6 py-12 text-center md:px-16 md:py-16">
+          <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-white/10" />
+          <div className="absolute -bottom-10 left-10 h-28 w-28 rounded-full bg-accent/25" />
+          <div className="absolute bottom-8 right-16 h-3 w-3 rounded-full bg-highlight" />
           <div className="relative">
-            <h2 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">{newsletter.title}</h2>
-            <p className="mx-auto mt-3 max-w-lg text-white/80">{newsletter.description}</p>
+            <h2 className="font-display text-3xl tracking-tight text-white md:text-5xl">
+              {newsletter.title}
+            </h2>
+            <p className="mx-auto mt-4 max-w-lg text-sm text-white/85 sm:text-base">
+              {newsletter.description}
+            </p>
             {submitted ? (
-              <p className="mt-8 text-sm font-medium text-accent">Thank you for subscribing!</p>
+              <p className="mt-8 text-sm font-semibold text-highlight">Thank you for subscribing!</p>
             ) : (
               <form onSubmit={handleSubmit} className="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row">
                 <Input
@@ -38,9 +42,9 @@ export function Newsletter() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="flex-1 border-white/20 bg-white/10 text-white placeholder:text-white/50 backdrop-blur-sm"
+                  className="h-12 flex-1 rounded-lg border-white/20 bg-white text-near-black placeholder:text-muted-foreground"
                 />
-                <Button type="submit" size="lg" variant="accent" className="shrink-0">
+                <Button type="submit" size="lg" className="shrink-0 bg-accent text-white hover:bg-accent/90">
                   {newsletter.buttonText}
                 </Button>
               </form>

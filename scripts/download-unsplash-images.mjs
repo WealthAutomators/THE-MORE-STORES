@@ -1,5 +1,5 @@
 /**
- * Downloads unique Unsplash images for AAM Partners LLC marketplace.
+ * Downloads unique Unsplash images for THE MORE STORES marketplace.
  * Hero, categories, banners, products (×2), and review photos.
  */
 import fs from "fs";
@@ -228,32 +228,34 @@ const CATEGORY_SLUG_POOL = {
 
 /** Explicit primary image per product slug for visual relevance */
 const PRODUCT_PRIMARY = {
-  "wireless-earbuds": "photo-1590658268037-6bf12165a509",
-  "bluetooth-speaker": "photo-1608043152269-423dbba4e7e1",
-  "smart-power-strip": "photo-1625728744080-077785a06511",
+  "portable-led-projector": "photo-1593784991095-a205069470b6",
+  "dual-screen-webcam": "photo-1587826080692-f439cd0b70da",
+  "usb-c-charging-station": "photo-1591290619762-c588f7f28c52",
   "electric-kettle": "photo-1585515320310-259814833e95",
-  "air-fryer": "photo-1585515680365-986b5a5d267a",
-  "coffee-grinder": "photo-1517668808822-9ebb02f2a0e6",
+  "ceramic-dutch-oven": "photo-1585515680365-986b5a5d267a",
+  "countertop-ice-maker": "photo-1556911221-bff31c812bea",
   "bath-towel-set": "photo-1584622650111-993a426fbf0a",
-  "shower-caddy-organizer": "photo-1616486338812-3dadae4b4ace",
-  "kids-learning-tablet": "photo-1503454535920-2a2bab2645a2",
-  "stem-robot-kit": "photo-1558068710-1c8e0857584f",
+  "bamboo-bath-mat": "photo-1620626011764-996317b8d101",
+  "magnetic-building-tiles": "photo-1566576912321-d58ddd7a6088",
+  "coding-card-game": "photo-1611892440509-7a25aafad115",
   "dog-bed": "photo-1583511655852-d21ac8a622af",
-  "pet-food-storage": "photo-1601758228041-f3b2795255f1",
-  "vitamin-c-serum-set": "photo-1620916566561-42b1d7f8d5b3",
-  "hair-care-bundle": "photo-1522335780783-8b0812a2bb33",
+  "interactive-cat-feeder": "photo-1516734212186-a967f81ad0d4",
+  "retinol-night-cream": "photo-1620916566561-42b1d7f8d5b3",
+  "dry-brush-kit": "photo-1556228720-195a672e8a03",
   "yoga-mat": "photo-1592432670736-3299669ea351",
-  "resistance-bands-set": "photo-1571019614242-c5c5dee9f50b",
-  "standing-desk-lamp": "photo-1507003211169-0a1dd7228f2d",
-  "ergonomic-mouse-pad": "photo-1497366216548-37526070297c",
-  "leather-wallet": "photo-1527864550417-8fd665563061",
-  "sunglasses-classic": "photo-1572635196237-14bfbfe68983",
-  "baby-monitor": "photo-1555252337-59f4fe5e5c77",
-  "soft-plush-blanket": "photo-1519689680058-324335c77eba",
+  "adjustable-jump-rope": "photo-1517836357463-d25dfeac3438",
+  "collapsible-soft-cooler": "photo-1576678927484-cc907957088c",
+  "cork-desk-organizer": "photo-1593062096039-9a26b09da705",
+  "monitor-laptop-stand": "photo-1524758631624-e2822e304c36",
+  "canvas-weekender-bag": "photo-1553062407-98eeb64c6a62",
+  "linen-scarf-set": "photo-1434389677669-e08b4cac3105",
+  "packing-cubes-set": "photo-1523275335684-37898b6baf30",
+  "silicone-feeding-set": "photo-1515488042361-ee00e5178171",
+  "soft-play-gym": "photo-1555252337-59f4fe5e5c77",
   "building-blocks-set": "photo-1587654780291-39c9404d746b",
-  "board-game-family": "photo-1611892440509-7a25aafad115",
-  "foam-roller": "photo-1601925265168-242426a8c117",
-  "essential-oil-diffuser": "photo-1608571428392-a4c1a89f9949",
+  "wooden-train-set": "photo-1558068710-1c8e0857584f",
+  "weighted-eye-mask": "photo-1544367567-0f2fcb009e0b",
+  "compact-massage-gun": "photo-1601925265168-242426a8c117",
 };
 
 const CATEGORY_IMAGES = {
@@ -293,9 +295,15 @@ function buildTargets() {
   const products = parseProducts();
   const targets = [];
 
-  targets.push({ file: "hero/hero-1.jpg", width: 2000, photoId: POOLS.hero[0] });
-  targets.push({ file: "banners/about.jpg", width: 1600, photoId: "photo-1607082348824-0a6f2a591e89" });
-  targets.push({ file: "banners/featured.jpg", width: 1600, photoId: "photo-1616486327342-c4ada60c33e5" });
+  targets.push({ file: "hero/hero-1.jpg", width: 2000, photoId: "photo-1441986300917-64674bd600d8" });
+  targets.push({ file: "banners/about.jpg", width: 1600, photoId: "photo-1441984904996-e0b6ba687e04" });
+  targets.push({ file: "banners/featured.jpg", width: 1600, photoId: "photo-1556909114-f6e7ad7d5046" });
+  targets.push({ file: "banners/life-home.jpg", width: 1400, photoId: "photo-1600585154340-be6161a56a0c" });
+  targets.push({ file: "banners/life-work.jpg", width: 1400, photoId: "photo-1497366216548-37526070297c" });
+  targets.push({ file: "banners/life-go.jpg", width: 1400, photoId: "photo-1488646953014-85cb44e25828" });
+  targets.push({ file: "banners/life-family.jpg", width: 1400, photoId: "photo-1511892549826-cc5412636993" });
+  targets.push({ file: "banners/life-weekend.jpg", width: 1400, photoId: "photo-1551632811-561732d1e306" });
+  targets.push({ file: "banners/life-space.jpg", width: 1400, photoId: "photo-1618221195710-e982f1f8752b" });
 
   for (const [slug, photoId] of Object.entries(CATEGORY_IMAGES)) {
     targets.push({ file: `categories/${slug}.jpg`, width: 800, photoId });
@@ -334,7 +342,7 @@ function buildTargets() {
 
 async function download(url) {
   const res = await fetch(url, {
-    headers: { "User-Agent": "AAMPartnersLLC/1.0 (image-setup)" },
+    headers: { "User-Agent": "TheMoreStores/1.0 (image-setup)" },
     redirect: "follow",
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);

@@ -8,110 +8,174 @@ export const heroSlides: HeroSlide[] = [
   {
     id: "1",
     image: "/hero/hero-1.jpg",
-    headline: "Everything Your Home Needs, All in One Place.",
+    headline: "MORE TO LOVE.\nMORE TO DISCOVER.",
     description:
-      "Shop electronics, home essentials, toys, beauty products, kitchen accessories and more at prices you'll love.",
-    ctaText: "Shop Collection",
+      "A bigger collection of useful finds, everyday upgrades and products worth bringing home.",
+    ctaText: "SHOP EVERYTHING",
     ctaLink: "/shop",
-    secondaryCtaText: "Today's Deals",
-    secondaryCtaLink: "/shop?sale=true",
+    secondaryCtaText: "SEE WHAT'S NEW",
+    secondaryCtaLink: "/new-arrivals",
   },
 ];
 
 export const features: Feature[] = [
   {
     id: "1",
-    icon: "truck",
-    title: "Fast Shipping",
-    description: "Free shipping on orders over $75. Delivered in 3–5 business days.",
+    icon: "layers",
+    title: "More Choice",
+    description: "A wide marketplace of finds across home, beauty, family, tech, and beyond.",
   },
   {
     id: "2",
-    icon: "shield",
-    title: "Secure Checkout",
-    description: "Your payment information is protected with industry-standard encryption.",
+    icon: "tag",
+    title: "More Value",
+    description: "Thoughtful pricing on everyday upgrades and seasonal deals worth opening.",
   },
   {
     id: "3",
-    icon: "rotate",
-    title: "Easy Returns",
-    description: "Hassle-free 30-day returns on most items. We make it simple.",
+    icon: "shopping-bag",
+    title: "Easy Shopping",
+    description: "Browse, save, and checkout in a smooth department-store experience.",
   },
   {
     id: "4",
-    icon: "headphones",
-    title: "Customer Support",
-    description: "Our friendly team is available Mon–Fri to help with orders and questions.",
-  },
-  {
-    id: "5",
-    icon: "star",
-    title: "Trusted Quality",
-    description: "Every product is carefully selected for quality, value, and reliability.",
+    icon: "sparkles",
+    title: "Fresh Finds",
+    description: "New arrivals and rotating edits so there is always more to discover.",
   },
 ];
 
 export const dealsEndTime = new Date(Date.now() + 1000 * 60 * 60 * 18).toISOString();
 
 export const homepageDealsSlugs = [
-  "wireless-earbuds",
+  "portable-led-projector",
   "electric-kettle",
-  "air-fryer",
+  "countertop-ice-maker",
   "dog-bed",
   "bath-towel-set",
-  "sunglasses-classic",
+  "canvas-weekender-bag",
 ] as const;
 
 export const homepageBestsellerSlugs = [
-  "wireless-earbuds",
-  "bluetooth-speaker",
+  "ceramic-dutch-oven",
+  "portable-led-projector",
   "bath-towel-set",
   "yoga-mat",
-  "kids-learning-tablet",
-  "coffee-grinder",
+  "magnetic-building-tiles",
+  "monitor-laptop-stand",
   "dog-bed",
   "electric-kettle",
 ] as const;
 
 export const homepageFeaturedSlugs = [
-  "wireless-earbuds",
-  "electric-kettle",
-  "bath-towel-set",
-  "kids-learning-tablet",
-  "standing-desk-lamp",
-  "air-fryer",
+  "ceramic-dutch-oven",
+  "portable-led-projector",
+  "retinol-night-cream",
+  "magnetic-building-tiles",
+  "cork-desk-organizer",
+  "countertop-ice-maker",
   "yoga-mat",
   "dog-bed",
-  "coffee-grinder",
-  "bluetooth-speaker",
+] as const;
+
+export const homepageFindsSlugs = [
+  "dual-screen-webcam",
+  "bamboo-bath-mat",
+  "interactive-cat-feeder",
+  "dry-brush-kit",
+  "adjustable-jump-rope",
+  "weighted-eye-mask",
+  "packing-cubes-set",
+  "wooden-train-set",
 ] as const;
 
 export const homepageNewArrivalSlugs = [
-  "stem-robot-kit",
-  "vitamin-c-serum-set",
-  "baby-monitor",
-  "foam-roller",
+  "usb-c-charging-station",
+  "compact-massage-gun",
+  "silicone-feeding-set",
+  "collapsible-soft-cooler",
+  "coding-card-game",
+  "linen-scarf-set",
+] as const;
+
+export const shopMoreCategories = [
+  { name: "Electronics", slug: "electronics", span: "wide" },
+  { name: "Home & Kitchen", slug: "home-kitchen", span: "tall" },
+  { name: "Bathroom", slug: "bathroom", span: "standard" },
+  { name: "Beauty", slug: "beauty", span: "standard" },
+  { name: "Workspace", slug: "office-supplies", span: "wide" },
+  { name: "Family", slug: "baby-products", span: "standard" },
+  { name: "Sports", slug: "sports-outdoors", span: "standard" },
+  { name: "Outdoor", slug: "sports-outdoors", span: "tall" },
+  { name: "Pets", slug: "pet-supplies", span: "standard" },
+  { name: "Travel", slug: "fashion-accessories", span: "standard" },
+  { name: "Toys & Games", slug: "toys-games", span: "wide" },
+  { name: "Wellness", slug: "health-wellness", span: "standard" },
+] as const;
+
+export const shopByLife = [
+  {
+    title: "At Home",
+    description: "Comfort upgrades for kitchens, baths, and living spaces.",
+    href: "/categories/home-kitchen",
+    image: "/banners/life-home.jpg",
+    span: "wide",
+  },
+  {
+    title: "At Work",
+    description: "Desk essentials that make focus feel easier.",
+    href: "/categories/office-supplies",
+    image: "/banners/life-work.jpg",
+    span: "standard",
+  },
+  {
+    title: "On The Go",
+    description: "Bags, coolers, and travel-ready gear.",
+    href: "/categories/fashion-accessories",
+    image: "/banners/life-go.jpg",
+    span: "standard",
+  },
+  {
+    title: "For The Family",
+    description: "Toys, baby finds, and shared moments.",
+    href: "/categories/baby-products",
+    image: "/banners/life-family.jpg",
+    span: "tall",
+  },
+  {
+    title: "For The Weekend",
+    description: "Outdoor energy and sports-ready picks.",
+    href: "/categories/sports-outdoors",
+    image: "/banners/life-weekend.jpg",
+    span: "standard",
+  },
+  {
+    title: "For Your Space",
+    description: "Lighting, storage, and finishing touches.",
+    href: "/shop",
+    image: "/banners/life-space.jpg",
+    span: "wide",
+  },
 ] as const;
 
 export const promotionalBanner: PromoBanner = {
   id: "1",
-  title: "Upgrade Your Everyday Living",
-  description:
-    "Discover premium products for every room in your home, from smart electronics to comfortable essentials, all in one place.",
-  buttonText: "Shop Deals",
-  buttonLink: "/shop?sale=true",
+  title: "EVERYDAY UPGRADES",
+  description: "Small upgrades. Better routines. Products you'll actually use.",
+  buttonText: "SHOP THE EDIT",
+  buttonLink: "/shop",
   image: "/banners/featured.jpg",
 };
 
 export const aboutSection = {
-  title: "Shopping Made Easy.",
+  title: "WHY SHOP THE MORE?",
   description:
-    "AAM Partners LLC brings together quality products across multiple categories, helping families find everything they need in one trusted online marketplace. We focus on affordability, reliability, and a smooth shopping experience from browsing to checkout.",
+    "THE MORE STORES brings a department-store energy online — more choice, more useful finds, and a shopping experience built for everyday life.",
   checklist: [
-    "Wide selection across 12+ categories",
-    "Competitive prices on everyday essentials",
-    "Fast, reliable shipping nationwide",
-    "Dedicated customer support team",
+    "Curated finds across a broad marketplace",
+    "Fresh arrivals and rotating edits",
+    "Clear pricing with deals that feel worth it",
+    "Friendly support from browse to delivery",
   ],
   buttonText: "Learn More About Us",
   buttonLink: "/about",
@@ -119,11 +183,11 @@ export const aboutSection = {
 };
 
 export const featuredCollection = {
-  title: "Featured Products",
-  description:
-    "Hand-picked favorites across electronics, home, beauty, and more — everything you need in one marketplace.",
+  title: "THIS WEEK'S EDIT",
+  description: "Small upgrades. Better routines. Products you'll actually use.",
   bannerImage: "/banners/featured.jpg",
-  categorySlug: "electronics",
+  categorySlug: "home-kitchen",
+  campaignTitle: "EVERYDAY UPGRADES",
 };
 
 export const bestSellerTabs = [
@@ -135,8 +199,8 @@ export const bestSellerTabs = [
 ];
 
 export const newsletter = {
-  title: "Get Exclusive Deals Before Everyone Else",
-  description: "Subscribe for discounts, new arrivals, and weekly offers.",
+  title: "GET MORE GOOD STUFF.",
+  description: "Fresh arrivals, useful finds and deals worth opening your inbox for.",
   placeholder: "Enter your email address",
   buttonText: "Subscribe",
 };

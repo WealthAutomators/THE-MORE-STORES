@@ -1,28 +1,28 @@
 import { HeroBanner } from "@/components/homepage/hero-banner";
-import { CategoryCarousel } from "@/components/homepage/category-carousel";
-import { DealsOfTheDay } from "@/components/homepage/deals-of-the-day";
-import { FeaturesRow } from "@/components/homepage/features-row";
+import { ShopMoreCategories } from "@/components/homepage/shop-more-categories";
+import { MoreFinds } from "@/components/homepage/more-finds";
 import { FeaturedCollection } from "@/components/homepage/featured-collection";
-import { PromotionalBanner } from "@/components/homepage/promotional-banner";
-import { BestSellers } from "@/components/homepage/best-sellers";
-import { AboutSection } from "@/components/homepage/about-section";
 import { NewArrivals } from "@/components/homepage/new-arrivals";
+import { ShopByLife } from "@/components/homepage/shop-by-life";
+import { BestSellers } from "@/components/homepage/best-sellers";
+import { MoreForLess } from "@/components/homepage/more-for-less";
 import { CustomerReviews } from "@/components/homepage/customer-reviews";
+import { WhyShopTheMore } from "@/components/homepage/why-shop-the-more";
 import { Newsletter } from "@/components/homepage/newsletter";
 
 export default function HomePage() {
   return (
     <>
       <HeroBanner />
-      <CategoryCarousel />
-      <DealsOfTheDay />
-      <FeaturesRow />
+      <ShopMoreCategories />
+      <MoreFinds />
       <FeaturedCollection />
-      <PromotionalBanner />
-      <BestSellers />
-      <AboutSection />
       <NewArrivals />
+      <ShopByLife />
+      <BestSellers />
+      <MoreForLess />
       <CustomerReviews />
+      <WhyShopTheMore />
       <Newsletter />
     </>
   );
